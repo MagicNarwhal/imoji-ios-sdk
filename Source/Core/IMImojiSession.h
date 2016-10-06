@@ -484,6 +484,17 @@ typedef void (^IMImojiSessionImojiAttributionResponseCallback)(NSDictionary *__n
 - (void)markImojiUsageWithIdentifier:(nonnull NSString *)imojiIdentifier
                     originIdentifier:(nullable NSString *)originIdentifier;
 
+/**
+ * @abstract Sets the users demographics information for the given session.
+ * @param gender An optional gender value for the user (either 'male' or 'female')
+ * @param latitude Optional latitude value for the users location
+ * @param longitude Optional longitude value for the users location
+ * @param dateOfBirth Optional date of birth value for the user
+ */
+- (void)setUserDemographicsData:(nullable NSString *)gender
+                       latitute:(nullable NSNumber *)latitude
+                      longitude:(nullable NSNumber *)longitude
+                    dateOfBirth:(nullable NSDate *)dateOfBirth;
 
 @end
 

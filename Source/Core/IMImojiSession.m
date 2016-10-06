@@ -620,6 +620,40 @@ NSString *const IMImojiSessionErrorDomain = @"IMImojiSessionErrorDomain";
                        }];
 }
 
+- (void)setUserDemographicsData:(nullable NSString *)gender
+                       latitute:(nullable NSNumber *)latitude
+                      longitude:(nullable NSNumber *)longitude
+                    dateOfBirth:(nullable NSDate *)dateOfBirth {
+    NSMutableDictionary *values = [NSMutableDictionary dictionary];
+
+    if (gender) {
+        if ([@"male" isEqualToString:gender] || [@"female" isEqualToString:gender]) {
+            values[@"gender"] = gender;
+        } else {
+            NSLog(@"WARNING: Unknown value '%@' sent for gender. Possible values are 'male' or 'female'", gender);
+        }
+    }
+
+    if (latitude && longitude) {
+        values[@"latitude"] = latitude;
+        values[@"longitude"] = longitude;
+    }
+
+    if (dateOfBirth) {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"MM-dd-yyyy"];
+        values[@"dateOfBirth"] = [dateFormatter stringFromDate:dateOfBirth];
+    }
+
+    if (values.count > 0) {
+        [[self runValidatedPostTaskWithPath:@"/analytics/demographics" andParameters:values]
+                continueWithExecutor:[BFExecutor mainThreadExecutor]
+                           withBlock:^id(BFTask *task) {
+                               return nil;
+                           }];
+    }
+}
+
 #pragma mark Attribution
 
 - (nonnull NSOperation *)fetchAttributionByImojiIdentifiers:(nonnull NSArray *)imojiObjectIdentifiers
