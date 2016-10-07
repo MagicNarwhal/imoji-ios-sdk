@@ -1,5 +1,9 @@
 # Imoji SDK Changes
 
+### Version 2.3.4
+
+* Adds hooks for developers to publish demographic information for campaigns.
+
 ### Version 2.3.3
 
 * NSURLSessionConfiguration for IMImojiSession now uses defaultSessionConfiguration over ephemeralSessionConfiguration.
