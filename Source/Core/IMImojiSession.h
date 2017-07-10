@@ -202,9 +202,6 @@ typedef void (^IMImojiSessionExportedImageResponseCallback)(UIImage *__nullable 
 
 /**
 * @abstract Callback used for exporting Imoji to an NSData reference for export (ex: sharing to iMessage, Instagram, etc).
-* @param image UIImage representation of the IMImojiObject.
-* @param data NSData reference safe for exporting.
-* @param typeIdentifier Either kUTTypeGIF or kUTTypePNG if the operation succeeded. nil otherwise.
 * @param error An error with code equal to an IMImojiSessionErrorCode value or nil if the request succeeded.
 */
 typedef void (^IMImojiSessionMSStickerResponseCallback)(NSObject *__nullable msStickerObject, NSError *__nullable error);
