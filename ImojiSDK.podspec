@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |ss|
     ss.dependency "Bolts/Tasks", '~> 1.2'
-    ss.dependency "YYImage/WebP", :git => 'https://github.com/ibireme/YYImage.git', :commit => 'ca4d535aef'
+    ss.dependency "YYImage/WebP", :git => 'https://github.com/ibireme/YYImage.git', :commit => 'ca4d535aef19e1a4eb29ce95b900db9d19510b97'
 
     ss.ios.source_files = 'Source/Core/**/*.{h,m}'
     ss.ios.public_header_files = 'Source/Core/*.h', 'Source/Core/Util/YYImage/*.h'
