@@ -23,7 +23,7 @@
 //  IN THE SOFTWARE.
 //
 
-#import <ImojiSDK/IMImojiCategoryObject.h>
+#import "IMImojiCategoryObject.h"
 #import "IMImojiResultSetMetadata.h"
 
 @implementation IMImojiResultSetMetadata {

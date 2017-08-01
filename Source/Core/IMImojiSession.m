@@ -28,7 +28,7 @@
 #import <Bolts/BFExecutor.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <ImageIO/ImageIO.h>
-#import <YYImage/YYImage.h>
+#import <YYImage-MagicNarwhal/YYImage.h>
 #import "ImojiSDK.h"
 #import "NSDictionary+Utils.h"
 #import "IMMutableImojiObject.h"
