@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 
   s.name     = 'ImojiSDK-MagicNarwhal'
-  s.version  = '2.3.5'
+  s.version  = '2.3.6'
   s.license  = 'MIT'
   s.summary  = 'iOS SDK for Imoji. Integrate Stickers and custom emojis into your applications easily!'
-  s.homepage = 'http://imoji.io/developers'
+  s.homepage = 'https://github.com/imojiengineering'
   s.authors = {'Nima Khoshini'=>'nima@imojiapp.com', 'Alex Hoang'=>'alex@imojiapp.com'}
   s.libraries = 'z'
 
