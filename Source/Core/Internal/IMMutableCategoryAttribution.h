@@ -25,7 +25,7 @@
 
 #import <Foundation/Foundation.h>
 #import "IMImojiCategoryObject.h"
-#import "IMCategoryAttribution.h"
+#import "../IMCategoryAttribution.h"
 
 @interface IMMutableCategoryAttribution : IMCategoryAttribution {
 @private

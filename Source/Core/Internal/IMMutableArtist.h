@@ -24,7 +24,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IMArtist.h"
+#import "../IMArtist.h"
 
 
 @interface IMMutableArtist : IMArtist {

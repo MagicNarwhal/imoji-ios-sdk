@@ -25,7 +25,7 @@
 
 #import "IMMutableCategoryObject.h"
 #import "IMImojiObject.h"
-#import "IMCategoryAttribution.h"
+#import "../IMCategoryAttribution.h"
 
 
 @implementation IMMutableCategoryObject {
