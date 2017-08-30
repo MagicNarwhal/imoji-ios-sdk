@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |ss|
     ss.dependency "Bolts/Tasks", '~> 1.2'
-    ss.dependency "YYImage-MagicNarwhal/WebP", '~>1.0'
+    ss.dependency "YYImage/WebP", '~>1.0'
 
     ss.ios.source_files = 'Source/Core/**/*.{h,m}'
-    ss.ios.public_header_files = 'Source/Core/*.h', 'Source/Core/Util/YYImage/*.h'
+    ss.ios.public_header_files = 'Source/Core/*.h'
   end
   
 end

@@ -5,7 +5,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 def shared_pods
   pod 'Bolts'
   pod 'libwebp'
-  pod 'YYImage-MagicNarwhal'
+  pod 'YYImage'
 end
 
 target "ImojiSDK" do
