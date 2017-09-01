@@ -4,7 +4,7 @@
 //
 
 #import <Bolts/Bolts.h>
-#import <YYImage/YYImage.h>
+#import <YYImage_MagicNarwhal/YYImage.h>
 #import "IMImojiSession+Private.h"
 #import "IMImojiSessionCredentials.h"
 #import "ImojiSDK.h"
